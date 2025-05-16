@@ -1,0 +1,44 @@
+.cabecera  {
+    display: flex;
+    background-color: rgb(3, 146, 3);
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+.pie  {
+    display: flex;
+    background-color: rgb(3, 146, 3);
+    vertical-align:auto;
+    align-items: start;
+    color:white;
+    padding: 10px 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.boton {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #1cb10e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenido {
+    height: calc(100vh - 80px); /* Ajusta si la cabecera cambia de tamaño */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
