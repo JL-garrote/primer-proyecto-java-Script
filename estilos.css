@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-image: url("Imagenes/ChatGPT Image 17 may 2025, 16_55_05.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Lexend', sans-serif;
+}
+
 .cabecera {
     position: relative;
     background-color: rgb(230, 219, 219);
@@ -17,54 +31,43 @@
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    height: 60px; 
+    height: 60px;
     width: auto;
 }
 
-.pie  {
-    display: flex;
+.pie {
     background-color: rgb(230, 219, 219);
-    vertical-align:auto;
-    align-items: start;
-    color:rgb(27, 134, 27);
+    color: rgb(27, 134, 27);
     padding: 10px 1%;
+    flex-shrink: 0;
+    text-align: center;
+    position: relative;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 .fotofooter {
     position: absolute;
     left: 10px;
-    top: auto;
+    top: 50%;
     transform: translateY(-50%);
-    height: 60px; 
+    height: 60px;
     width: auto;
-    background-color: 230, 219, 219;
+    background-color: rgb(230, 219, 219);
 }
 
-body {
-    background-image: url("Imagenes/ChatGPT\ Image\ 17\ may\ 2025\,\ 16_55_05.png");
-    background-repeat: no-repeat;      
-    background-size: cover;            
-    background-position: center;       
-    background-attachment: fixed; 
-}
-
-#resultado {
-    display: none;
-    max-width: 600px;     
-    margin: 40px auto;    
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgb(255, 255, 255);
-    margin-top: 20px;
-    padding: 10px;
-    background-color: white;
+.cont {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 0;
 }
 
 .boton {
-    padding: 2%;
+    padding: 2% 4%;
     font-size: 18px;
     background-color: #1cb10e;
     color: white;
@@ -73,20 +76,46 @@ body {
     cursor: pointer;
 }
 
-.espaciador {
-    margin-bottom: -4%;
+#resultado {
+    display: none;
+    max-width: 600px;
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    background-color: white;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0%;
+#tabla-imc {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-family: Arial, sans-serif;
 }
 
-.cont {
-    height: calc(100vh - 80px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1%;
+#tabla-imc th,
+#tabla-imc td {
+    border: 1px solid #4CAF50; /* verde para bordes */
+    padding: 10px;
+    text-align: center;
+}
+
+#tabla-imc th {
+    background-color: #4CAF50; /* verde oscuro para encabezado */
+    color: white;
+    font-weight: bold;
+}
+
+#tabla-imc tr:nth-child(even) {
+    background-color: #e8f5e9; /* verde muy claro para filas pares */
+}
+
+#tabla-imc tr:nth-child(odd) {
+    background-color: #ffffff; /* blanco para filas impares */
+}
+
+#tabla-imc tr:hover {
+    background-color: #a5d6a7; /* verde medio al pasar el ratón */
+    cursor: pointer;
 }

@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Proyecto JavaScript [MEDAC]</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css" />
     <script src="funciones.js" defer></script>
 </head>
-
 <body>
     <div class="cabecera">
         <header class="encabezado">
-            <img src="Imagenes/logoAndalucia.png" class="logo">
+            <img src="Imagenes/logoAndalucia.png" class="logo" alt="Logo Andalucía" />
             <h1>Analizador de Salud</h1>
         </header>
     </div>
 
     <div class="cont">
         <button class="boton" id="boton">Calcular IMC</button>
+
+        <div id="resultado">
+            <p id="mensaje"></p>
+            <p id="latidos"></p>
+            <p id="sueño"></p>
+            <p id="tmb"></p>
+            <table id="tabla-imc"></table>
+        </div>
     </div>
 
-    <div id="resultado">
-        <p id="mensaje"></p>
-        <p id="latidos"></p>
-        <p id ="sueño"></p>
-    </div>
-    
     <div class="pie">
         <footer>
-            <h2 class="footer">MEDAC</h2><img src="Imagenes/logo.PNG" class="fotofooter">
+            <h2 class="footer">MEDAC</h2>
+            <img src="Imagenes/logo.PNG" class="fotofooter" alt="Logo MEDAC" />
             <p>Trabajo realizado por Juan Luis Gil</p>
         </footer>
     </div>
