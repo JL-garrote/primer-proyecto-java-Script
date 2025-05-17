@@ -18,6 +18,17 @@
     text-align: center;
 }
 
+#resultado {
+  display: none;
+  max-width: 600px;      /* Límite máximo de ancho */
+  margin: 40px auto;     /* Centrado vertical y horizontal */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding: 10px;
+}
+
 .boton {
     padding: 15px 30px;
     font-size: 18px;
@@ -35,7 +46,7 @@
     padding: 0;
 }
 
-.contenido {
+.cont {
     height: calc(100vh - 80px); /* Ajusta si la cabecera cambia de tamaño */
     display: flex;
     justify-content: center;

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Java Script [MEDAC]</title>
+    <title>Proyecto JavaScript [MEDAC]</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="funciones.js" defer></script>
 </head>
 
 <body>
@@ -13,15 +14,19 @@
             <h1>Analizador de Salud</h1>
         </header>
     </div>
-</body>
 
-<body>
-    <div class="contenido">
-        <button class="boton">Calcular IMC</button>
+    <div class="cont">
+        <button class="boton" id="boton">Calcular IMC</button>
     </div>
+
+
+    <div id="resultado">
+        <p id="mensaje"></p>
+    </div>
+    
     <div class="pie">
         <footer>
-            <H2>MEDAC</H2>
+            <h2>MEDAC</h2>
             <p>Trabajo realizado por Juan Luis Gil</p>
         </footer>
     </div>
